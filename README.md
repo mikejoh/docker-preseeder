@@ -1,5 +1,5 @@
 # docker-preseeder
-This project was created for fun, i haven't tested the whole build chain with this Debian preseed.cfg server, but it should work as long as you have a good understanding on how your preseed.cfg shoudl look like.
+This project was created for fun, i haven't tested the whole automation chain with this Debian preseed.cfg server, but it should work to spin up this container when you need it and serve a preseed.cfg for you automated Debian installations!
 
 ## Todo
 [ ] Serve the preseed.cfg via a volume to the container
