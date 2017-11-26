@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    preseeder:
+        build: .
+        restart: unless-stopped
+        volumes:
+            - ./preseed.cfg:/app/preseeder/preseed.cfg
+        ports:
+            - "8080:80"
