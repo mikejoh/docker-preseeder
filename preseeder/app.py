@@ -5,7 +5,7 @@ import hashlib
 app = Flask(__name__)
 
 def get_preseed_checksum():
-    return hashlib.md5(open('./preseed.cfg', 'rb').read()).hexdigest()
+    return hashlib.md5(open('/app/preseeder/preseed.cfg', 'rb').read()).hexdigest()
 
 @app.route('/')
 def index():
@@ -14,7 +14,7 @@ def index():
 
 @app.route('/preseed.cfg')
 def preseed():
-    return send_file('./preseed.cfg')
+    return send_file('/app/preseeder/preseed.cfg')
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
